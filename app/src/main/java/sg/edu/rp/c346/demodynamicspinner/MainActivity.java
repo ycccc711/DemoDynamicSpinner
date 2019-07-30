@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         String[] strNumbers = getResources().getStringArray(R.array.even_numbers);
                         alNumbers.addAll(Arrays.asList(strNumbers));
                         aaNumbers.notifyDataSetChanged();
+                        spn2.setSelection(2);
                         break;
                     case 1:
                         pos = spn1.getSelectedItemPosition();
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                         String[] strOdd = getResources().getStringArray(R.array.odd_numbers);
                         alNumbers.addAll(Arrays.asList(strOdd));
                         aaNumbers.notifyDataSetChanged();
+                        spn2.setSelection(1);
                         break;
                 }
             }
